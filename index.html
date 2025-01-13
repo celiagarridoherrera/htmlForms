@@ -10,60 +10,55 @@
     <h1>GeeksforGeeks Survey Form</h1>
 <div class="container">
     <form id="survey-form">
-    <label>Name</label>
-    <br>
+    <div class="name-container"><label>Name</label>
     <input type="text" name="name" id="name" placeholder="Enter your name">
-    
-    <label>Email</label>
-    <br>
-    <input type="text" name="email" id="email" placeholder="Enter your email">
-    
-    <label>Age</label>
-    <br>
-    <input type="text" name="age" id="age" placeholder="Enter your age">
+    </div>
 
+    <div class="email-container">
+    <label>Email</label>
+    <input type="text" name="email" id="email" placeholder="Enter your email">
+    </div>
+    
+    <div class="age-container">
+    <label>Age</label>
+    <input type="text" name="age" id="age" placeholder="Enter your age">
+    </div>
+
+    <div class="opcion-container">
     <label>Which best option describes you?</label>
     <select name="option" id="option">
         <option value="student">Student</option>
         <option value="worker">Worker</option>
         <option value="other">Other</option>
     </select>
-    
-    <label> Would you recommend this site? </label>
-    <br>
-    <input type="radio" name="recommend" id="recommend" value="yes">Yes
-    <br>
-    <input type="radio" name="recommend" id="recommend" value="no">No
-    <br>
-    <input type="radio" name="recommend" id="recommend" value="maybe">Maybe
-    <br>
-    <label>Language and Frameworks known</label>
-    <br>
-    <input type="checkbox" name="language" id="language" value="C">C
-    <br>
-    <input type="checkbox" name="language" id="language" value="C++">C++
-    <br>
-    <input type="checkbox" name="language" id="language" value="C#">C#
-    <br>
-    <input type="checkbox" name="language" id="language" value="Java">Java
-    <br>
-    <input type="checkbox" name="language" id="language" value="Python">Python
-    <br>
-    <input type="checkbox" name="language" id="language" value="JavaScript">JavaScript
-    <br>
-    <input type="checkbox" name="language" id="language" value="React">React
-    <br>
-    <input type="checkbox" name="language" id="language" value="Angular">Angular
-    <br>
-    <input type="checkbox" name="language" id="language" value="Django">Django
-    <br>
-    <input type="checkbox" name="language" id="language" value="Spring">Spring
+    </div>
 
+    <div class="recommend-container">
+    <label> Would you recommend this site? </label>
+    <input type="radio" name="recommend" id="recommend" value="yes">Yes
+    <input type="radio" name="recommend" id="recommend" value="no">No
+    <input type="radio" name="recommend" id="recommend" value="maybe">Maybe
+    </div>
+
+    <div class="language-container">
+    <label>Language and Frameworks known</label>
+    <input type="checkbox" name="language" id="language" value="C">C
+    <input type="checkbox" name="language" id="language" value="C++">C++
+    <input type="checkbox" name="language" id="language" value="C#">C#
+    <input type="checkbox" name="language" id="language" value="Java">Java
+    <input type="checkbox" name="language" id="language" value="Python">Python
+    <input type="checkbox" name="language" id="language" value="JavaScript">JavaScript
+    <input type="checkbox" name="language" id="language" value="React">React
+    <input type="checkbox" name="language" id="language" value="Angular">Angular
+    <input type="checkbox" name="language" id="language" value="Django">Django
+    <input type="checkbox" name="language" id="language" value="Spring">Spring
+    </div>
+
+    <div class="comments-container">
     <label>Any comments or suggestions</label>
-    <br>
     <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-    <br>
     <button type="submit">Submit</button>
+    </div>
     </form>
 
 </div>

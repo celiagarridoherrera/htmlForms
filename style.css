@@ -17,7 +17,7 @@ h1{
     font-weight: normal;
 }
 
-form{
+#survey-form{
     margin: 2%;
 }
 
@@ -81,4 +81,8 @@ button{
     font-size: 16px;
     cursor: pointer;
 
+}
+
+button:hover{
+    background-color: #4f9e4f;
 }
