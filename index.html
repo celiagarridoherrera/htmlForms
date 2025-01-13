@@ -3,70 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>GeeksforGeeks Survey Form</h1>
-<div class="container">
-    <form id="survey-form">
-    <label>Name</label>
-    <br>
-    <input type="text" name="name" id="name" placeholder="Enter your name">
-    
-    <label>Email</label>
-    <br>
-    <input type="text" name="email" id="email" placeholder="Enter your email">
-    
-    <label>Age</label>
-    <br>
-    <input type="text" name="age" id="age" placeholder="Enter your age">
+    <div class="container">
+        <form id="survey-form">
 
-    <label>Which best option describes you?</label>
-    <select name="option" id="option">
-        <option value="student">Student</option>
-        <option value="worker">Worker</option>
-        <option value="other">Other</option>
-    </select>
-    
-    <label> Would you recommend this site? </label>
-    <br>
-    <input type="radio" name="recommend" id="recommend" value="yes">Yes
-    <br>
-    <input type="radio" name="recommend" id="recommend" value="no">No
-    <br>
-    <input type="radio" name="recommend" id="recommend" value="maybe">Maybe
-    <br>
-    <label>Language and Frameworks known</label>
-    <br>
-    <input type="checkbox" name="language" id="language" value="C">C
-    <br>
-    <input type="checkbox" name="language" id="language" value="C++">C++
-    <br>
-    <input type="checkbox" name="language" id="language" value="C#">C#
-    <br>
-    <input type="checkbox" name="language" id="language" value="Java">Java
-    <br>
-    <input type="checkbox" name="language" id="language" value="Python">Python
-    <br>
-    <input type="checkbox" name="language" id="language" value="JavaScript">JavaScript
-    <br>
-    <input type="checkbox" name="language" id="language" value="React">React
-    <br>
-    <input type="checkbox" name="language" id="language" value="Angular">Angular
-    <br>
-    <input type="checkbox" name="language" id="language" value="Django">Django
-    <br>
-    <input type="checkbox" name="language" id="language" value="Spring">Spring
+            <div class="form-container">
+                <label for="name" id="label-name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
 
-    <label>Any comments or suggestions</label>
-    <br>
-    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-    <br>
-    <button type="submit">Submit</button>
-    </form>
+            <div class="form-container">
+                <label for="email" id="label-email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
 
-</div>
-<script src="script.js"></script>
+            <div class="form-container">
+                <label for="age" id="label-age">Age</label>
+                <input type="number" name="age" id="age" placeholder="Enter your age">
+            </div>
+
+            <div class="form-container">
+                <label for="role" id="label-role">Which best describes you?</label>
+                <select name="role" id="role">
+                    <option value="student">Student</option>
+                    <option value="worker">Worker</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-container">
+                <label>Would you recommend this site?</label>
+                <div class="input-group">
+                    <input type="radio" name="recommend" id="recommend-yes" value="yes">
+                    <label for="recommend-yes">Yes</label>
+                </div>
+                <div class="input-group">
+                    <input type="radio" name="recommend" id="recommend-no" value="no">
+                    <label for="recommend-no">No</label>
+                </div>
+                <div class="input-group">
+                    <input type="radio" name="recommend" id="recommend-maybe" value="maybe">
+                    <label for="recommend-maybe">Maybe</label>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <label>Languages and Frameworks Known:</label>
+                <div class="input-group">
+                    <input type="checkbox" name="language" id="c" value="C">
+                    <label for="c">C</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="language" id="cpp" value="C++">
+                    <label for="cpp">C++</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="language" id="csharp" value="C#">
+                    <label for="csharp">C#</label>
+                </div>               
+                <div class="input-group">
+                    <input type="checkbox" name="language" id="java" value="Java">
+                    <label for="java">Java</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="language" id="python" value="Python">
+                    <label for="python">Python</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="checkbox" name="language" id="js" value="JavaScript">
+                    <label for="js">JavaScript</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="checkbox" name="language" id="react" value="React">
+                    <label for="react">React</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="checkbox" name="language" id="angular" value="Angular">
+                    <label for="angular">Angular</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="checkbox" name="language" id="django" value="Django">
+                    <label for="swift">Django</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="checkbox" name="language" id="spring" value="Spring">
+                    <label for="spring">Spring</label>
+            </div>
+
+            <div class="form-container">
+                <label for="comments" id="label-comments">Any comments or suggestions</label>
+                <textarea name="comments" id="comments" rows="5" placeholder="Write your comments here"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
